@@ -1,0 +1,31 @@
+
+
+API Reference
+https://sc1.checkpoint.com/documents/latest/APIs/index.html#web/login~v1.3%20
+
+
+Advanced Upgrade with Database Migration
+https://sc1.checkpoint.com/documents/R80/CP_R80_Gaia_IUG/html_frameset.htm?topic=documents/R80/CP_R80_Gaia_IUG/128363
+
+
+Checkpoint Community
+https://community.checkpoint.com/
+
+To monitor this by: tail -f  $FWDIR/log/fwm.elg (even in R80.x).
+When process is fully up a message like "Security Management server is alive" shows up. I think it was changed to CPM server started in R80.x. Then you know you were ready to go.
+
+
+
+$MDS_FWDIR/scripts/cpm_status.sh
+with results like
+ 
+Check Point Security Management Server is running and ready
+
+or
+
+Check Point Security Management Server is during initialization
+
+
+
+From a console or SSH run $CPMDIR/scripts/check_cpm_status.sh script.
+When it shows CPM server started, you are good to go.
